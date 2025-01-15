@@ -1,0 +1,12 @@
+ipyleaflet
+matplotlib
+pandas
+shiny
+shinywidgets
+openmeteo_requests
+requests_cache
+retry_requests
+faicons
+ipywidgets
+plotly
+scipy

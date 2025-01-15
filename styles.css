@@ -1,0 +1,20 @@
+.sidebar .plotly {
+  height: 200px;
+}
+
+/* FigureWidget doesn't support config?!? */
+.plotly .modebar-container {
+  display: none;
+}
+
+.card-body:has(.leaflet-container) {
+  padding: 0;
+}
+
+.card-footer p {
+  margin-bottom: 0;
+}
+
+.popover-body p {
+  margin-bottom: 0;
+}

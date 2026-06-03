@@ -4,7 +4,7 @@ The Air Quality Index (AQI) Monitor is a data visualization tool developed using
 The application enables users to explore pollutant concentrations at different locations, compare regional air quality metrics, and forecast pollution trends for specific coordinates. 
 This technical report outlines the architecture, features, and functionalities of the AQI Monitor, detailing how users can interact with real-time and forecasted air quality data.
 ________________________________________
-2. System Architecture
+<h2> System Architecture</h2>
 The AQI Monitor is built using Shiny for Python, which allows for reactive and interactive UI elements. The application fetches real-time air quality data from an external API and visualizes it through multiple components, including:
 •	An interactive heatmap for pollutant distribution.
 •	Density graphs and histograms for data comparison.
@@ -20,7 +20,7 @@ The system retrieves real-time air quality data from the Open-Meteo Air Quality 
 •	European Air Quality Index (AQI)
 The API returns location-based pollutant concentration values and hourly forecast of next 5 days, which are processed and visualized within the application.
 ________________________________________
-3. Application Features
+<h2>Application Features</h2>
 3.1 Interactive Map (Tab 1)
 The first tab, "Interactive Map", provides a real-time heatmap visualization of air quality levels across the globe. This visualization helps users identify pollution hotspots and compare regional air quality differences at a glance.
 Key Features:
@@ -46,7 +46,7 @@ o	Shows expected values for AQI and pollutant levels.
 •	Data Grid: A tabular view of the forecast data, providing detailed pollutant concentrations for each day.
 ________________________________________
 
-4. Implementation Details
+<h2> Implementation Details</h2>
 4.1 Technologies Used
 •	Backend: Shiny for Python
 •	Frontend: Shiny UI components, Leaflet for maps, Plotly for interactive graphs
@@ -54,12 +54,14 @@ ________________________________________
 •	Data Processing: Pandas for data manipulation
 •	Visualization: Matplotlib, Plotly, and Leaflet
 4.2 Data Processing Workflow
-1.	API Request: The system fetches AQI data from Open-Meteo.
-2.	Data Cleaning: The raw JSON response is parsed, and relevant pollutant values are extracted.
-3.	Data Visualization: The processed data is mapped onto the heatmap, density graphs, and histograms.
-4.	User Interaction: The UI dynamically updates based on user selections (e.g., pollutant type, forecast location).
+<ul>
+<li>API Request: The system fetches AQI data from Open-Meteo.</li>
+<li>Data Cleaning: The raw JSON response is parsed, and relevant pollutant values are extracted.</li>
+<li>Data Visualization: The processed data is mapped onto the heatmap, density graphs, and histograms.</li>
+<li>User Interaction: The UI dynamically updates based on user selections (e.g., pollutant type, forecast location).</li>
+</ul>
 ________________________________________
-5. Conclusion
+<h2>Conclusion</h2>
 The AQI Monitor developed in Shiny for Python provides an interactive, real-time air quality visualization and forecasting tool. By leveraging heatmaps, statistical graphs, and forecasting models, the system enables users to monitor and predict air quality trends worldwide effectively. The integration with Open-Meteo's Air Quality API ensures accurate and up-to-date information.
 Future enhancements could include:
 •	Weather Forecast: Displaying future weather conditions alongside air quality predictions to help users understand potential correlations.
